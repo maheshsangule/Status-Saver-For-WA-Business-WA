@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.MainActivity"
+
+    tools:openDrawer="start">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/tool_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    app:menu="@menu/top_menu"
+                    app:navigationIcon="@drawable/menu_icon"
+                    app:navigationIconTint="@color/white"
+                    app:title="@string/app_name"
+                    app:titleTextAppearance="@style/ActionBarFont"
+                    app:titleTextColor="@color/white" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_anchor="@+id/constraintLayout"
+                app:layout_anchorGravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintTop_toBottomOf="@+id/app_bar_layout" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+
+                app:itemActiveIndicatorStyle="@style/bottomNavIndicator"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@color/white"
+                app:itemRippleColor="@color/secondaryColor"
+                app:itemTextColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_menu" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_margin="20dp"
+
+
+        app:drawerLayoutCornerSize="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/splash_img_back"
+                android:gravity="center"
+                android:minHeight="200dp"
+                android:padding="5dp"
+                android:src="@drawable/app_icon"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_extrabold"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/secondaryColor"
+                android:textSize="20sp" />
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:paddingStart="20dp">
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/ms_whatsapp_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:checked="false"
+                            android:drawableStart="@drawable/ic_whatsapp1"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="@color/colorPrimary"
+
+                            android:gravity="center_vertical"
+
+                            android:text="WhatsApp"
+                            android:textSize="15sp"
+
+                            app:thumbTint="@color/white"
+                            app:trackTint="@color/colorPrimary"
+
+
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                        <ImageButton
+                            android:id="@+id/ib_help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/icon_info"
+                            app:tint="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="15dp"
+                        android:paddingStart="20dp">
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/msbar_notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:checked="true"
+                            android:drawableStart="@drawable/icon_notification"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="@color/colorPrimary"
+                            android:gravity="center_vertical"
+                            android:text="On"
+                            android:textOff="Notification Off"
+                            android:textOn="Notification On"
+                            android:textSize="15sp"
+                            app:thumbTint="@color/white"
+
+
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_how_to_use"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="13dp"
+                        android:drawableStart="@drawable/help_iocn"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/secondaryColor"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:text="How to Use"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="13dp"
+                        android:drawableStart="@drawable/icon_share"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/secondaryColor"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:text="Invite Friends"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_disclaimar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="13dp"
+                        android:drawableStart="@drawable/icon_info1"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/secondaryColor"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:text="Disclaimer"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_rate_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="13dp"
+                        android:drawableStart="@drawable/icon_star"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/secondaryColor"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:text="Rate Us"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_privacy_policy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="15dp"
+                        android:drawableStart="@drawable/privacy"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/secondaryColor"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:text="Privacy Policy"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_version_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text=""
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+
+            tools:ignore="RtlCompat" />
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+

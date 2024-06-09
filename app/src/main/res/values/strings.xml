@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Status Saver</string>
+    <string name="folder_path">Status Saver</string>
+      <string name="email">developermaheshhelp@gmail.com</string>
+    <string name="email_subject">Welcome to Status Saver</string>
+    <string name="email_body">Write down your comment below this line. </string>
+    <string name="use_this_folder_description">Dear user, For Android 11 or above, storage permission is rquired\nmanually, use the button below to provide the required permission. We assure to take care of\nuser privacy and will not access unnecessary files or media</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TabText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BottomNavStyle">
+        <item name="colorSecondaryContainer">@color/colorPrimaryHighlight</item>
+    </style>
+
+    <style name="ActionBarFont">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Model</item>
+    </style>
+
+    <style name="Model" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_back</item>
+        <item name="android:layout_margin">15dp</item>
+        <!--        <item name="a">@drawable/bottom_sheet_back</item>-->
+    </style>
+
+    <style name="bottomNavIndicator" parent="@style/Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#33FFFFFF</item>
+
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle" parent="@style/MaterialAlertDialog.Material3">
+        <item name="fontFamily">@font/poppins_bold</item>
+
+    </style>
+
+</resources>

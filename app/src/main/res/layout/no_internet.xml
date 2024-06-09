@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_no_internet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottomsheet_background"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <View
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bottomsheet_stick_background"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:src="@drawable/no_internet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Oops!"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Check your internet connection."
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="please try again!"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_no_internet2"
+            android:layout_width="150dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_open_whatsapp"
+
+            android:fontFamily="@font/poppins_bold"
+            android:text="Retry"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:textSize="15sp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:padding="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="cancle" />&ndash;&gt;-->
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginLeft="40dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:paddingRight="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="Add item"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="@color/black"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="18sp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textStyle="bold" />&ndash;&gt;-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester1"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/google1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester2"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester3"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester4"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester5"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester6"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->

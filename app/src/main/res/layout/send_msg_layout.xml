@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_msg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bottomsheet_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bottomsheet_stick_background"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/et_country_code"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/et_background"
+                android:drawableStart="@drawable/icon_country"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="+91"
+                android:maxLength="4"
+android:inputType="number"
+                android:paddingStart="14dp"
+                android:textColor="@color/black"
+
+
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:autoSizeTextType="none"
+                android:inputType="number"
+                android:background="@drawable/et_background"
+                android:drawableStart="@drawable/ic_whatsapp"
+                android:drawablePadding="5dp"
+
+
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="9420XXXX11"
+                android:maxLength="10"
+                android:padding="5dp"
+                android:paddingStart="14dp"
+                android:textColor="@color/black"
+
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:background="@drawable/et_background"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter message here"
+            android:padding="5dp"
+            android:paddingStart="14dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btn_whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="10dp"
+
+            android:background="@drawable/bg_open_whatsapp"
+
+            android:fontFamily="@font/poppins_bold"
+            android:text="WhatsApp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:textSize="15sp"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_w4b"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_open_whatsapp"
+
+            android:fontFamily="@font/poppins_bold"
+            android:text="WhatsApp Business"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:textSize="15sp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:padding="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="cancle" />&ndash;&gt;-->
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginLeft="40dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:paddingRight="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="Add item"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="@color/black"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="18sp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textStyle="bold" />&ndash;&gt;-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester1"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/google1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester2"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester3"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester4"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester5"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:background="@drawable/facebook1" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:paddingStart="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Semester6"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="19sp" />-->
